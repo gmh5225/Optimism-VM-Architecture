@@ -48,5 +48,26 @@ graph TB
   - Converts EVM bytecode to OVM bytecode
   - Ensures compatibility
   - Optimizes execution
-
-
+## Communication with L1
+- Bridge Contract
+    ```solidity
+    interface IL1Bridge {
+        function depositETH() external payable;
+        function withdrawETH(uint256 amount) external;
+        function finalizeWithdrawal(bytes proof) external;
+    }
+    ```
+- Batch Submission
+  - Transactions are batched for efficiency
+  - Submitted periodically to L1
+  - Reduces gas costs
+- Security Model
+  - Fraud Proofs
+    - State roots published to L1
+    - Challenge period (7 days)
+    - Interactive fraud proof if challenged
+    - Automatic resolution
+  - Security Features
+    - EVM compatibility
+    - L1 security inheritance
+    - Challenge-response mechanism
