@@ -44,5 +44,9 @@ graph TB
   - Validates operations
   - Ensures security constraints
   - Prevents unauthorized state access
+- Transpiler
+  - Converts EVM bytecode to OVM bytecode
+  - Ensures compatibility
+  - Optimizes execution
 
 
