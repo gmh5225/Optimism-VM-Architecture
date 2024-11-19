@@ -1,5 +1,7 @@
 # Optimism_VM_Architecture
 
+The Optimistic Virtual Machine (OVM) is a virtual machine designed for Layer 2 scaling solutions, specifically for Optimism. It provides EVM compatibility while enabling high throughput and low-cost transactions.
+
 ```mermaid
 graph TB
     subgraph "Layer 1 - Ethereum Mainnet"
