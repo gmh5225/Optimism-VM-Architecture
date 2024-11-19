@@ -30,3 +30,10 @@ graph TB
 
     User[User] --> Sequencer
 ```
+
+## Core Components
+- Execution Manager
+  - Manages transaction execution
+  - Provides virtualized EVM context
+  - Handles state transitions
+
