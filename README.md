@@ -48,6 +48,7 @@ graph TB
   - Converts EVM bytecode to OVM bytecode
   - Ensures compatibility
   - Optimizes execution
+    
 ## Communication with L1
 - Bridge Contract
     ```solidity
@@ -61,13 +62,24 @@ graph TB
   - Transactions are batched for efficiency
   - Submitted periodically to L1
   - Reduces gas costs
-- Security Model
-  - Fraud Proofs
-    - State roots published to L1
-    - Challenge period (7 days)
-    - Interactive fraud proof if challenged
-    - Automatic resolution
-  - Security Features
-    - EVM compatibility
-    - L1 security inheritance
-    - Challenge-response mechanism
+    
+## Security Model
+- Fraud Proofs
+  - State roots published to L1
+  - Challenge period (7 days)
+  - Interactive fraud proof if challenged
+  - Automatic resolution
+- Security Features
+  - EVM compatibility
+  - L1 security inheritance
+  - Challenge-response mechanism
+
+## Performance Benefits
+- Transaction Processing
+  - High throughput
+  - Low latency
+  - Reduced costs
+- State Management
+  - Efficient state updates
+  - Compressed storage
+  - Optimized access patterns
