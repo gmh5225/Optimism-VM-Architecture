@@ -1,10 +1,11 @@
 # Optimism_VM_Architecture
 
+```mermaid
 graph TB
     subgraph "Layer 1 - Ethereum Mainnet"
         L1[Ethereum] --> Bridge[Bridge Contract]
     end
-
+    
     subgraph "Layer 2 - Optimism"
         Bridge <--> Sequencer[Sequencer]
         Sequencer --> BatchSubmitter[Batch Submitter]
@@ -26,3 +27,4 @@ graph TB
     end
 
     User[User] --> Sequencer
+```
