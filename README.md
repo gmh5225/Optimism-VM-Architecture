@@ -36,4 +36,13 @@ graph TB
   - Manages transaction execution
   - Provides virtualized EVM context
   - Handles state transitions
+- State Manager
+  - Maintains L2 state
+  - Manages state updates
+  - Ensures state consistency
+- Safety Checker
+  - Validates operations
+  - Ensures security constraints
+  - Prevents unauthorized state access
+
 
